@@ -213,6 +213,10 @@ body {
 
 .card3 h3 {
     margin-left: 15px!important;
+    max-height: 40px; /* Ajuste selon le besoin */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .containerbot {
@@ -475,15 +479,17 @@ body {
     }
 
     .card2 {
-     width: 100%; /* La carte prend toute la largeur */
-     padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px; /* Hauteur fixe */
     }
 
     .card2 img {
         width: 100% !important; /* L'image prend toute la largeur de la carte */
-        height: auto; /* Maintient le ratio d'aspect */
+        height: 190px; /* Maintient le ratio d'aspect */
         max-height: 300px; /* Facultatif : limite la hauteur */
-        object-fit: cover; /* Recadre l’image pour remplir l’espace */
+        object-fit: cover;
         border-radius: 10px;
     }
 
@@ -549,6 +555,7 @@ body {
 
     .card3 h3 {
         margin-left: 15px!important;
+
     }
 
     #magnifying-glass {
